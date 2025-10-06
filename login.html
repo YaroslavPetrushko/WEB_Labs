@@ -4,27 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Авторизація</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h2>Форма авторизації</h2>
   <form>
     <label for="username">Логін:</label>
-    <input type="text" id="username" name="username" placeholder="Введіть логін" required><br><br>
+    <input type="text" id="username" name="username" placeholder="Введіть логін" required>
 
     <label for="password">Пароль:</label>
-    <input type="password" id="password" name="password" required><br><br>
+    <input type="password" id="password" name="password" required>
 
     <label>
       <input type="checkbox" name="remember" checked>
       Запам’ятати мене
-    </label><br><br>
+    </label>
 
-    <label>Доступ до розсилки:</label><br>
-    <input type="radio" id="subscribeYes" name="subscribe" value="yes" checked>
-    <label for="subscribeYes">Так</label>
-    <input type="radio" id="subscribeNo" name="subscribe" value="no">
-    <label for="subscribeNo">Ні</label><br><br>
-
+    <div class="radio-group">
+    <span>Доступ до розсилки:</span>
+    <label><input type="radio" name="subscribe" value="yes" checked> Так</label>
+    <label><input type="radio" name="subscribe" value="no"> Ні</label>
+  </div>
+  
     <button type="submit">Увійти</button>
     <button type="reset">Очистити</button>
   </form>

@@ -4,19 +4,17 @@
 <meta charset="UTF-8">
 <!-- Назва сторінки - відображається на вкладці браузера та в пошуку -->
 <title>Main Page</title> 
-<!-- Місце для стилів. Створимо потім -->
-<style>
-</style>
+<!-- Посилання на стилі -->
+<link rel="stylesheet" href="styles.css">
 </head>
 <!-- "Тіло" сторінки -->
 <body>
 <!-- "Шапка" сайту -->
 <header class="header">
-    <h1>Yaroslav Petrushko's Blog</h1>
-<!-- Фото -->
-<a class="image" href="index1.html">
- <img src="images/main_image.png" alt="Main image" title="Profile Image" fetchpriority="high" width="100" height="100" >
-</a>
+    <a class="image" href="index1.html">
+    <img src="images/main_image.png" alt="Main image" title="Profile Image" fetchpriority="high" width="100" height="100" >
+    </a>
+<h1>Yaroslav Petrushko's Blog</h1>
 </header> <!-- Кінець "шапки" -->
 
 <!-- Кнопки навігації по сайту -->
@@ -35,6 +33,7 @@
     <p>If say shortly about me: 20 y.o., Computer Science student, live in Ukraine. Hobbies: gaming, IT, music.</p>
 </article>
 <img src="images/welcome.gif" alt="Welcome" title="Sam Lake cheers" loading="lazy" > <!-- Альтернативний текст відображається у випадку відсутності вказаного медіа -->
+
 <section class="section">
     <h3>Favorite films:</h3> <!-- Заголовок розділу -->
     <p>Drive (2011) - 8/10. Literally me.</p>
@@ -44,9 +43,17 @@
     <p>Matrix (1999) - 8/10. Third best sci-fi I watched.</p>   
 </section>
 
-<aside>
-    <img src="images/image1.jpg" alt="Banner" title="Banner" width="300" height="200" loading="lazy">
-    <p>Fun fact: I learned C++ as first programming language.</p>
+<div class="card">
+  <h3>My Favorite Game</h3>
+  <p style="text-align: center;"><b>Persona 4 Golden (2011)</b></p>
+  <p> Genre: JRPG, Social simulation.</p>
+  <p> Bonds of friendship are the strongest.</p>
+  <img src="images/P4G_Cover.jpg" alt="P4G_Cover" title="Persona 4 Golden Cover" loading="lazy" > 
+</div>
+
+<aside class ="aside">
+    <img src="images/image1.jpg" alt="Banner" title="Banner" loading="lazy">
+    <br><p>Fun fact: I learned C++ as first programming language.</p>
     <p><q>Code is like humor. When you have to explain it, it’s bad.</q></p>
     <p>Follow me: <a href="https://github.com/YaroslavPetrushko" target="_blank">GitHub</a></p>
 </aside>
@@ -56,7 +63,7 @@
 <footer class="footer" id="footer"> 
     <p>&copy; 2025 Yaroslav Petrushko's Blog</p>
     <p>Email: <a href="mailto:yaroslavpetrushko_off@gmail.com">yaroslavpetrushko_off@gmail.com</a></p>
-    <p><a href="about.html">Contacts</a> | Last site update: 19 September 2025</p>
+    <p><a href="about.html">Contacts</a> | Last site update: 30 September 2025</p>
 </footer>
 
 </body>

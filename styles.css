@@ -1,0 +1,228 @@
+/* ===== 1. Загальні стилі ===== */
+:root {
+  --bg: #142244;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #324C67;
+  --accent2: #5e75fa;
+  --warn: #fbbf24;
+  --input-border: #ccc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: radial-gradient(1000px at 20% -10%, #142244, #0f162e, #03050e);
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+main img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  padding: 5px;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto 40px;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.header h1{
+  font-size: 32px;
+  margin: 0;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+}
+
+.header a img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.article, .aside {
+  max-width: 800px;
+  text-align: center;
+}
+.aside img{
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 8px;
+  max-width: 400px;
+  height: auto;
+}
+
+.section {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+.card {
+  background: #273d69;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.card img {
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 8px;
+  max-width: 500px;
+  height: auto;
+}
+
+/* ===== 2. Заголовки і текст ===== */
+h1, h2, h3 {
+    text-align: center;
+  margin: 0 0 12px;
+}
+h1 {
+  font-size: 28px;
+}
+h1::after {
+  content: " 👨‍💻";
+  color: var(--warn);
+}
+
+p {
+  color: #c7d2fe;
+  margin: 0 0 10px;
+}
+
+/* ===== 3. Меню ===== */
+nav {
+  display: flex;
+  gap: 16px;
+  margin: 12px 0;
+    justify-content: center;
+}
+nav a {
+  font-size: 22px;
+  color: var(--text);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+nav a:hover {
+  background: var(--accent2);
+  color: #0f172a;
+}
+
+/* ===== 4. Форми ===== */
+form {
+  background: #0f162e;
+  border-radius: 12px;
+  padding: 20px 25px;
+  max-width: 400px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+input, select, textarea {
+  padding: 10px 12px;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+label:has(input[type="radio"]) {
+  display: flex;
+  align-items: center;
+  gap: 8px;   
+  font-weight: normal;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.radio-group label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+input:focus, textarea:focus, select:focus {
+  border: 1px solid #3F5CFF;
+  outline: none;
+  box-shadow: 0 0 6px rgba(63,92,255,0.4);
+}
+
+button {
+  background: #3F5CFF;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #2E46CC;
+}
+button:active {
+  background: #1E2F99;
+}
+
+/* === Адаптивність === */
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+}
