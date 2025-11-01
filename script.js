@@ -297,3 +297,6 @@ searchInput.addEventListener("keydown", (e) => {
 renderCategoryButtons();
 
 renderAll(articles);
+
+
+
