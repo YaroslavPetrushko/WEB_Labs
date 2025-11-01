@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="form-page">
+  <h2>Форма реєстрації</h2>
+  <form>
+    <label for="fullname">Ім’я та прізвище:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Ваше повне ім’я" required>
+
+    <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="about">Коротко про себе:</label>
+    <textarea id="about" name="about" rows="4" cols="40" placeholder="Розкажіть про свої інтереси..."></textarea>
+
+  <div class="radio-group">
+    <span>Стать:</span>
+    <label><input type="radio" name="gender" value="male" checked> Чоловіча</label>
+    <label><input type="radio" name="gender" value="female"> Жіноча</label>
+  </div>
+  
+    <label for="country">Країна:</label>
+    <select id="country" name="country">
+      <option value="ua" selected>Україна</option>
+      <option value="uk">Великобританія</option>
+      <option value="fr">Франція</option>
+      <option value="us">США</option>
+    </select>
+
+    <label for="birthdate">Дата народження:</label>
+    <input type="date" id="birthdate" name="birthdate"><br>
+
+    <button type="submit">Зареєструватися</button>
+    <button type="reset">Очистити</button>
+  </form>
+      <script src="forms.js" defer></script>
+</body>
+</html>
