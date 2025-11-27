@@ -1,0 +1,55 @@
+{
+  "personalInfo": {
+    "name": "Yaroslav Petrushko",
+    "age": 20,
+    "location": "Ukraine 💙💛",
+    "occupation": "Computer Science Student",
+    "bio": "Passionate developer who loves combining IT, gaming, and music into creative projects. Always learning and exploring new technologies."
+  },
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": ["C++", "C#", "HTML/CSS"]
+    },
+    {
+      "category": "Technologies",
+      "items": ["Git", "SQL"]
+    },
+    {
+      "category": "Other Skills",
+      "items": ["Game Design", "Music Production", "Technical Writing"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "AA-Videogame Script",
+      "description": "Working on a techno-fantasy setting game script and game design",
+      "status": "In Progress",
+      "icon": "🎮"
+    },
+    {
+      "title": "Etherpunk Music Album",
+      "description": "Creating an experimental music album with cyberpunk influences",
+      "status": "In Progress",
+      "icon": "🎧"
+    },
+    {
+      "title": "Article: Video Games as Modern Entertainment",
+      "description": "Writing a comprehensive article about the cultural impact of video games",
+      "status": "Draft",
+      "icon": "📘"
+    }
+  ],
+  "contacts": [
+    {
+      "type": "Email",
+      "value": "yaroslavpetrushko_off@gmail.com",
+      "link": "mailto:yaroslavpetrushko_off@gmail.com"
+    },
+    {
+      "type": "GitHub",
+      "value": "github.com/YaroslavPetrushko",
+      "link": "https://github.com/YaroslavPetrushko"
+    }
+  ]
+}

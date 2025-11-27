@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Додати статтю - Yaroslav Petrushko's Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<!-- Шапка -->
+<header class="header">
+    <a class="image" href="index1.html">
+        <img src="images/main_image.png" alt="Main image" title="Profile Image" fetchpriority="high" width="100" height="100">
+    </a>
+    <h1>Yaroslav Petrushko's Blog</h1>
+</header>
+
+<!-- Навігація -->
+<nav class="nav">
+    <a href="index1.html" class="nav-item">Home</a>
+    <a href="blog.html" class="nav-item">Blog</a>
+    <a href="about.html" class="nav-item">About me</a>
+    <a href="login.html" class="nav-item">Login</a>
+    <a href="register.html" class="nav-item">Register</a>
+</nav>
+
+<!-- Основний контент -->
+<main class="main">
+    <section id="add-post-section">
+        <h2>📝 Створити нову статтю</h2>
+        
+        <!-- Форма додавання статті -->
+        <form class="article-form" maxwidth="auto">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="title">Заголовок *</label>
+                    <input type="text" id="title" placeholder="Введіть заголовок статті" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="author">Автор</label>
+                    <input type="text" id="author" placeholder="Yaroslav" value="Yaroslav">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="category">Категорія</label>
+                    <input type="text" id="category" placeholder="Films, Games, IT, Education, Music..." list="categories">
+                    <datalist id="categories">
+                        <option value="Films">
+                        <option value="Games">
+                        <option value="IT">
+                        <option value="Education">
+                        <option value="Music">
+                    </datalist>
+                </div>
+
+                <div class="form-group">
+                    <label for="tags">Теги (через кому)</label>
+                    <input type="text" id="tags" placeholder="SciFi, Cinema, Inspiration">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="content">Зміст статті *</label>
+                <textarea id="content" rows="12" placeholder="Введіть текст вашої статті. Можна використовувати HTML-теги: <em>, <strong>, <br> тощо" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="image">Шлях до зображення</label>
+                <input type="text" id="image" placeholder="images/your-image.jpg">
+                <small>Вкажіть відносний шлях до зображення (наприклад: images/photo.jpg)</small>
+            </div>
+
+            <button type="button" id="addPost" class="btn-add">➕ Додати статтю</button>
+            <button type ="button" id="clearPosts" class="btn-danger">➖ Очистити пости</button>
+        </form>
+
+        <!-- Попередній перегляд -->
+        <section class="preview-section">
+            <h3>👁️ Попередній перегляд</h3>
+            <div id="preview" class="preview-box">
+                <p class="preview-empty">Тут з'явиться попередній перегляд</p>
+            </div>
+        </section>
+
+
+
+        <!-- Список останніх статей -->
+        <section class="articles-list-section">
+            <h3>📚 Останні додані статті</h3>
+             <!-- Лічильник постів -->
+             <p id="counter" class="counter"></p>
+            <div id="articlesList" class="articles-grid"></div>
+        </section>
+    </section>
+</main>
+
+<!-- Бокова панель -->
+<aside class="aside">
+    <h3>💡 Інструкція</h3>
+    <ul>
+        <li>✍️ Заповніть форму новою статтею</li>
+        <li>👁️ Перегляньте як вона виглядатиме</li>
+        <li>✅ Натисніть "Додати статтю"</li>
+        <li>🎉 Стаття з'явиться на головній сторінці блогу!</li>
+    </ul>
+    
+    <h4>🎨 Форматування</h4>
+    <p>У полі "Зміст" можна використовувати:</p>
+    <ul>
+        <li><code>&lt;em&gt;</code> - курсив</li>
+        <li><code>&lt;strong&gt;</code> - жирний</li>
+        <li><code>&lt;br&gt;</code> - новий рядок</li>
+    </ul>
+
+    <h4>🏷️ Популярні теги</h4>
+    <p>SciFi, Cinema, Videogames, Persona, JRPG, Life, Networking, Education, AI, Music, Design, UX, Innovation</p>
+</aside>
+
+<!-- Підвал -->
+<footer class="footer" id="footer">
+    <p>&copy; 2025 Yaroslav Petrushko's Blog</p>
+    <p>Email: <a href="mailto:yaroslavpetrushko_off@gmail.com">yaroslavpetrushko_off@gmail.com</a></p>
+    <p><a href="about.html">Contacts</a> | Last site update: 20 November 2025</p>
+</footer>
+
+<script src="dist/main.js" type="module"></script>
+</body>
+</html>

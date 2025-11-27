@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaroslav Petrushko's Blog - Feed</title> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<!-- Шапка -->
+<header class="header">
+    <a class="image" href="index1.html">
+    <img src="images/main_image.png" alt="Main image" title="Profile Image" fetchpriority="high" width="100" height="100" >
+    </a>
+<h1>Games Feed</h1>
+</header> 
+
+<!-- Навігація -->
+<nav class="nav">
+    <a href="index1.html" class="nav-item">Home</a> 
+    <a href="blog.html" class="nav-item">Back to blog</a> 
+</nav>
+
+<!-- Основний контент-->
+<main class="main"> 
+  
+    <!-- Секція блогу -->
+    <section id="blog">
+      <h2>Пошук ігор за назвою</h2>
+
+ <!-- Поле для фільтрації та кнопки пошуку і оновлення -->
+      <div id="toolbar" class="toolbar">
+            <input type="text" 
+                id="filter-input" 
+                placeholder="Шукати ігри за назвою..."
+                aria-label="Фільтр ігор за назвою">
+            <button id="search-posts">Шукати ігри</button>
+            <button id="reload-posts">Оновити список</button>
+        </div>
+        
+        <!-- Статус завантаження -->
+        <p id="status"></p>
+        
+        <!-- Контейнер для постів -->
+        <div id="posts"></div>   
+    </section>
+</main>
+
+
+<!-- Бокова панель -->
+<aside class ="aside">
+ <h3>Game Finder Hub</h3>
+
+    <a class="image">
+        <img src="images/game_banner.jpg"
+            alt="Game Search Banner"
+            title="Find your next favorite game"
+            loading="lazy"
+            srcset="images/game_banner_400.jpg 400w, images/game_banner.jpg 800w"
+            sizes="(max-width: 600px) 100vw, 400px">
+    </a>
+    <p><b>Tip of the day:</b> If you want to filter posts - enter text in <i>input line</i>. For searching new games - input interesting genres/title and press <b>search button</b></i> for best match results.</p>
+   
+    <blockquote>
+        <q>“A good game is a series of interesting choices.”</q>
+        <cite>— Sid Meier</cite>
+    </blockquote>
+
+    <h4>Trending now:</h4>
+    <ul>
+        <li>🔥 Most searched: <b>Cyberpunk RPG</b></li>
+        <li>🕹️ Popular tag: <b>Souls-like</b></li>
+        <li>🌐 Top platform: <b>PC / Steam</b></li>
+    </ul>
+
+    <p>Follow updates: <a href="https://github.com/YaroslavPetrushko">GitHub</a></p>
+</aside>
+
+<!--Підвал-->
+<footer class="footer" id="footer"> 
+    <p>&copy; 2025 Yaroslav Petrushko's Blog</p>
+    <p>Email: <a href="mailto:yaroslavpetrushko_off@gmail.com">yaroslavpetrushko_off@gmail.com</a></p>
+    <p><a href="about.html">Contacts</a> | Last site update: 26 November 2025</p>
+</footer>
+
+  <script src="dist/indexApi.js" type="module"></script>
+</body>
+</html>
+
+
+
+
+<!-- <script src="dist/indexApi.js" type="module"></script>
